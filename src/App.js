@@ -16,7 +16,7 @@ const [error,setError]=useState("");
 const Login=details=>{
   console.log(details);
 
-  if(details.email==adminUser.email && details.password==adminUser.password){
+  if(details.email===adminUser.email && details.password===adminUser.password){
     console.log("Logged In");
 
     setUser({
@@ -25,8 +25,8 @@ const Login=details=>{
     });
   }
   else{
-    console.log("Details donot match");
-    setError("Details donot match");
+    console.log("Invalid Details");
+    setError("Invalid Details");
   }
 
   
@@ -39,7 +39,7 @@ const Logout=()=>{
 
   return (
     <div className="App">
-    {(user.email!="")?(
+    {(user.email!=="")?(
       <div className="welcome">
         <h2><center>WELCOME</center> <span>{user.name}</span></h2>
         <h4><center>You have logged in with the email address as</center> <span>{user.name}</span></h4>

@@ -6,12 +6,12 @@
       
 }  
 input, button {  
-        appearance: none;
-        background: none;  
-        border: none;
-        outline: none;  
-          
-} 
+    appearance: none;
+    background: none;  
+    border: none;
+    outline: none;
+}  
+      
 .App{
     height:100vh;
     display:flex;
@@ -20,7 +20,7 @@ input, button {
     background-color: #ffffff;
 }
 form{
-    display:block;
+    display:-moz-inline-box;
     position: relative;
 } 
 form:after{
@@ -32,7 +32,7 @@ form:after{
     right: -10px;
     bottom: -10px;
     z-index: 1;
-    background-color: gray;
+    background-color:gray;
     border-radius: 15px ;  
           
 }
@@ -43,13 +43,13 @@ form .form-inner {
     width:382px;
     margin: 20 0 0 450px;   
           
-    background-color: gray;
+    background-color:gray;
     padding: 30px;
     z-index: 2;
 }
 form .form-inner {
     color:black;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 500;
     
           
@@ -58,14 +58,14 @@ form .form-inner {
 form .form-inner .form-group{
     display: block;
     color:black;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
 }
 .form-inner .form-group label{
     display: block;
     color: black;
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     transition: 0.4s;
 }
 
